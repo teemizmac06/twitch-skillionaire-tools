@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "regions": ["iad1"],
+  "buildCommand": "echo 'No build needed'",
+  "outputDirectory": "public",
+  "functions": {
+    "api/telegram/webhook.js":    { "maxDuration": 10,  "memory": 256  },
+    "api/analyze/index.js":       { "maxDuration": 300, "memory": 3008 },
+    "api/analyze/screenshots.js": { "maxDuration": 300, "memory": 3008 },
+    "api/health.js":              { "maxDuration": 10,  "memory": 128  }
+  },
+  "routes": [
+    { "src": "/api/telegram/webhook",    "dest": "/api/telegram/webhook.js" },
+    { "src": "/api/analyze/screenshots", "dest": "/api/analyze/screenshots.js" },
+    { "src": "/api/analyze",             "dest": "/api/analyze/index.js" },
+    { "src": "/api/health",              "dest": "/api/health.js" },
+    { "src": "/(.*)",                    "dest": "/public/$1" }
+  ]
+}

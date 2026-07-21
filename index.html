@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Twitch Skillionaire Tools</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:linear-gradient(135deg,#FAFAFA 0%,#F7F5FF 60%,#EDE8FF 100%);min-height:100vh;padding:60px 24px;color:#09080F;-webkit-font-smoothing:antialiased}
+.wrap{max-width:900px;margin:0 auto}
+.logo{display:flex;align-items:center;gap:12px;margin-bottom:48px}
+.logo-icon{width:48px;height:48px;background:#9146FF;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:22px}
+.logo-name{font-size:20px;font-weight:800;color:#09080F}
+.logo-sub{font-size:13px;color:#8C86A8;font-weight:500}
+h1{font-size:clamp(32px,6vw,54px);font-weight:900;letter-spacing:-.03em;line-height:1.08;margin-bottom:14px}
+h1 span{color:#9146FF}
+.sub{font-size:17px;color:#4A4265;line-height:1.65;max-width:560px;margin-bottom:48px}
+.tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-bottom:60px}
+.tool-card{background:#fff;border:1px solid rgba(0,0,0,0.07);border-radius:20px;padding:28px;text-decoration:none;color:inherit;transition:all .22s;display:flex;flex-direction:column;gap:14px;box-shadow:0 2px 12px rgba(0,0,0,0.05)}
+.tool-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(145,70,255,0.12);border-color:rgba(145,70,255,0.3)}
+.tool-ico{width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
+.tool-name{font-size:17px;font-weight:800}
+.tool-desc{font-size:14px;color:#4A4265;line-height:1.6}
+.tool-badge{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;padding:4px 11px;border-radius:999px;margin-top:auto;width:fit-content}
+.badge-purple{background:rgba(145,70,255,0.1);color:#9146FF}
+.badge-blue{background:rgba(10,132,255,0.1);color:#0a84ff}
+.badge-green{background:rgba(48,209,88,0.1);color:#30d158}
+.bot-section{background:#09080F;border-radius:24px;padding:36px;color:#fff;display:flex;align-items:flex-start;gap:24px;flex-wrap:wrap}
+.bot-icon{width:60px;height:60px;background:linear-gradient(135deg,#9146FF,#0a84ff);border-radius:18px;display:flex;align-items:center;justify-content:center;font-size:28px;flex-shrink:0}
+.bot-text{flex:1;min-width:220px}
+.bot-title{font-size:20px;font-weight:800;margin-bottom:6px}
+.bot-sub{font-size:14px;color:rgba(255,255,255,0.5);line-height:1.6;margin-bottom:16px}
+.bot-steps{display:flex;flex-direction:column;gap:8px}
+.bot-step{display:flex;align-items:flex-start;gap:10px;font-size:13px;color:rgba(255,255,255,0.7)}
+.step-num{width:22px;height:22px;background:rgba(145,70,255,0.4);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;margin-top:1px}
+.footer{margin-top:48px;text-align:center;font-size:13px;color:#8C86A8}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="logo">
+    <div class="logo-icon">🎮</div>
+    <div>
+      <div class="logo-name">Twitch Skillionaire Tools</div>
+      <div class="logo-sub">Professional Channel Intelligence</div>
+    </div>
+  </div>
+
+  <h1>Know exactly why your<br>channel <span>isn't growing</span></h1>
+  <p class="sub">Professional Twitch analytics, proof dashboards, and automated reports — powered by real Twitch data.</p>
+
+  <div class="tools">
+
+    <a href="/twitch-audit-pro.html" class="tool-card">
+      <div class="tool-ico" style="background:rgba(145,70,255,0.1)">🔍</div>
+      <div>
+        <div class="tool-name">Twitch Audit Pro</div>
+        <div class="tool-desc">Full channel intelligence dashboard. 18+ features including growth lost calculator, competitor comparison, AI prediction, and 9-image HD download.</div>
+      </div>
+      <div class="tool-badge badge-purple">⭐ Premium Tool</div>
+    </a>
+
+    <a href="/streamscope-audit.html" class="tool-card">
+      <div class="tool-ico" style="background:rgba(10,132,255,0.1)">📡</div>
+      <div>
+        <div class="tool-name">StreamScope Audit</div>
+        <div class="tool-desc">Shareable channel audit reports with Growth Lost calculator, discoverability scores, and HD report card download.</div>
+      </div>
+      <div class="tool-badge badge-blue">📊 Audit Tool</div>
+    </a>
+
+    <a href="/proof-generator.html" class="tool-card">
+      <div class="tool-ico" style="background:rgba(48,209,88,0.1)">🖼</div>
+      <div>
+        <div class="tool-name">Proof Generator</div>
+        <div class="tool-desc">Generate 4 professional proof images matching your dashboard screenshots — health score, growth comparison, readiness, and creator IQ.</div>
+      </div>
+      <div class="tool-badge badge-green">✅ Proof Images</div>
+    </a>
+
+  </div>
+
+  <div class="bot-section">
+    <div class="bot-icon">🤖</div>
+    <div class="bot-text">
+      <div class="bot-title">Skillonaire AI Bot — Telegram Integration</div>
+      <div class="bot-sub">Send a Twitch URL on Telegram. Receive 9 professional proof images automatically in under 60 seconds.</div>
+      <div class="bot-steps">
+        <div class="bot-step"><div class="step-num">1</div>Open Telegram → find your Skillonaire AI Bot</div>
+        <div class="bot-step"><div class="step-num">2</div>Send: <code style="background:rgba(255,255,255,0.1);padding:2px 7px;border-radius:6px">https://twitch.tv/username</code></div>
+        <div class="bot-step"><div class="step-num">3</div>Receive 9 HD proof images automatically ✅</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">Twitch Skillionaire Tools · Built with Twitch API · Real data only</div>
+
+</div>
+</body>
+</html>
